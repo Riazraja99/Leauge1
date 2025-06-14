@@ -1,0 +1,228 @@
+﻿
+/* Reset & Base Styles */
+body {
+    background-color: #f5f9f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2e3a2f;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto 4rem;
+    padding: 0 1rem;
+}
+
+h2 {
+    text-align: center;
+    color: #3e5e3e;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Header */
+header {
+    background: #3e5e3e;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.site-logo {
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+}
+
+.site-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    color: #e8f5e9;
+}
+
+/* Navigation */
+.navbar {
+    background: rgba(62, 94, 62, 0.85);
+    backdrop-filter: saturate(180%) blur(6px);
+    border-top: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    padding: 0.5rem 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+    .nav-links a {
+        color: #d9ead3;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.35rem 0.75rem;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .nav-links a:hover {
+            background-color: #a2d5a2;
+            color: #1b2e1b;
+        }
+
+/* Hero Banner */
+.hero-banner {
+    position: relative;
+    background-image: url('images/Stadium.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+    .hero-banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 0;
+    }
+
+    .hero-banner h1, .hero-banner p {
+        position: relative;
+        z-index: 1;
+    }
+
+/* Match Cards & Live Scores */
+.live-scores-section {
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    padding: 40px 20px;
+    border-radius: 15px;
+    color: #fff;
+    margin: 50px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.matches-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.match-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .match-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+.team-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+.team-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    margin-bottom: 8px;
+    border: 2px solid #fff;
+}
+
+.team-name {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.score, .vs {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.vs {
+    font-size: 1.2em;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+    .image-gallery img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        transition: transform 0.2s ease;
+    }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+/* Footer / Bottom Section */
+.bottom-section {
+    background-color: #add8e6;
+    color: #333;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+    .bottom-section a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+
+        .bottom-section a:hover {
+            text-decoration: underline;
+        }
