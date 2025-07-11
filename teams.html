@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teams - Khilafat Soccer League</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <button class="toggle-theme" onclick="document.body.classList.toggle('dark-mode')">Toggle Dark Mode</button>
+    <style>
+        body {
+            background-image: url('images/logo.png'); /* Path to your image */
+            background-size: 400px 400px; /* Cover entire page */
+            background-repeat: no-repeat; /* No repeating */
+            background-attachment: fixed; /* Stay in place on scroll */
+            background-position: center center; /* Center the image */
+            opacity: 1; /* Optional: makes whole body semi-transparent */
+        }
+    </style>
+    <header>
+        <div class="header-content">
+           <a href="index.html"><img src="images/logo.png" alt="Logo" class="site-logo" />
+            <h1 class="site-title">Khilafat Soccer League</h1>
+
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="fixtures.html">Fixtures</a></li>
+                <li><a href="management.html">Management Team</a></li>
+                <li><a href="ladder.html">Ladder</a></li>
+                <li><a href="stats.html">Player Stats</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a href="index.html" class="back-link">
+        <img src="images/back-arrow.png" alt="Back" class="back-icon" />
+        Back
+    </a>
+    <main>
+        <h2>Teams</h2>
+        <div class="teams-container">
+            <div class="team-card">
+                <a href="team-nasir.html">
+                    <div class="img-wrapper">
+                        <img src="images/nasir.png" alt="Nasir FC Logo" />
+                    </div>
+                </a>
+                <h3>Nasir FC</h3>
+            </div>
+            <div class="team-card">
+                <a href="team-tahir.html">
+                    <div class="img-wrapper">
+                        <img src="./images/tahir.png" alt="Tahir FC Logo" />
+                    </div>
+                </a>
+                <h3>Tahir FC</h3>
+            </div>
+            <div class="team-card">
+                <a href="team-noor.html">
+                    <div class="img-wrapper">
+                        <img src="images/noor.png" alt="Noor FC Logo" />
+                    </div>
+                </a>
+                <h3>Noor FC</h3>
+            </div>
+            <div class="team-card">
+                <a href="team-mahmood.html">
+                    <div class="img-wrapper">
+                        <img src="images/mahmood.png" alt="Mehmood FC Logo" />
+                    </div>
+                </a>
+                <h3>Mehmood FC</h3>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
